@@ -75,13 +75,7 @@ async function run() {
             })
         })
 
-        //add to data in server from UI 
-        // app.post('/products', async (req, res) => {
-        //     const product = req.body;
-        //     const result = await productCollection.insertOne(product);
-        //     console.log(result)
-        //     res.send(result)
-        // })
+
         app.post('/products', async (req, res) => {
             const name = req.body.name;
             const description = req.body.description;
